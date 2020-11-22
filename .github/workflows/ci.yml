@@ -6,7 +6,11 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '0 4,10,16,22 * * *'
+    - cron: '45 15 * * *'
+    - cron: '33 20 * * *'
+    - cron: '21 01 * * *'
+    - cron: '09 06 * * *'
+    - cron: '57 10 * * *'
 
 jobs:
   build:
@@ -16,10 +20,6 @@ jobs:
         with:
           repository: MCSMDS/Robot
           token: ${{ secrets.GITHUBPATA }}
-
-#      - uses: actions/setup-java@v1.4.3
-#        with:
-#          java-version: 1.8
 
       - name: Docker
         run: |
