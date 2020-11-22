@@ -35,7 +35,7 @@ jobs:
           npm i
 
       - name: Start
-        run: node node-mirai/launch.js
+        run: node node-mirai/launch.js ${{ github.event_name }}
 
 #      - name: Setup tmate session
 #        uses: mxschmitt/action-tmate@v3
