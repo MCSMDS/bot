@@ -27,6 +27,8 @@ jobs:
           docker pull python:latest
           docker pull ruby:latest
           docker pull golang:latest
+          docker pull google/dart:latest
+          docker pull gcc:latest
 
       - name: Build
         run: |
@@ -39,4 +41,3 @@ jobs:
 
 #      - name: Setup tmate session
 #        uses: mxschmitt/action-tmate@v3
-
